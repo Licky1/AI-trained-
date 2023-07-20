@@ -2,6 +2,49 @@
 <html>
 <head>
     <title>Crop Prediction Results</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            padding-bottom: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #f2f2f2;
+        }
+
+        ul {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-top: 60px; /* Increase this value if the title and list box overlap */
+            list-style-type: none;
+        }
+
+        li {
+            font-size: 16px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Predicted Crop Yields</h1>
