@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction Results</title>
+</head>
+<body>
+    <h1>Predicted Crop Yields</h1>
+    <ul>
+        {% for prediction in crop_predictions %}
+        <li>Crop: {{ prediction['crop'] }} - Yield: {{ prediction['yield'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
