@@ -1,10 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Crop Prediction Chatbot</title>
+    <title>Crop Prediction AI</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            padding-bottom: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #f2f2f2;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin-top: 60px; /* Increase this value if the title and form overlap */
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Crop Prediction Chatbot in Albania</h1>
+    <h1>Crop Prediction AI for Albania</h1>
     <form action="/predict" method="post">
         <label for="userInput">Enter your Vegetable:</label>
         <input type="text" id="userInput" name="userInput" required>
@@ -12,3 +77,4 @@
     </form>
 </body>
 </html>
+
